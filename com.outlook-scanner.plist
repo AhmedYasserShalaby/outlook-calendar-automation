@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.outlook-scanner</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <!-- UPDATE THIS: path to your Python interpreter in venv -->
+        <string>/Users/ahmedyasser/Documents/NotUseless/Outlook/venv/bin/python</string>
+        <string>/Users/ahmedyasser/Documents/NotUseless/Outlook/main.py</string>
+        <string>--verbose</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/ahmedyasser/Documents/NotUseless/Outlook</string>
+
+    <!-- Run daily at 7:00 AM -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>7</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <!-- Also run when first loaded (catch up after sleep/restart) -->
+    <key>RunAtLoad</key>
+    <true/>
+
+    <!-- Logging -->
+    <key>StandardOutPath</key>
+    <string>/Users/ahmedyasser/Library/Logs/outlook-scanner.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/ahmedyasser/Library/Logs/outlook-scanner-error.log</string>
+
+    <!-- Don't keep running -->
+    <key>KeepAlive</key>
+    <false/>
+</dict>
+</plist>

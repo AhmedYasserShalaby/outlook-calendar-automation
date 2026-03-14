@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+venv/
+.venv/
+
+# Secrets & tokens
+.env
+token.json
+token_cache.bin
+outlook_token_cache.json
+credentials.json
+service_account.json
+client_secret_*.json
+
+# Browser session state (contains auth cookies)
+browser_state/
+
+# State DB
+processed_emails.db
+*.db
+*.sqlite
+*.sqlite3
+
+# Raw logs and audit data (may contain private email content)
+raw_email_logs/
+audit_logs/
+
+# Debug screenshots
+debug_*.png
+*.png
+
+# Logs
+*.log
+cron_log.txt
+
+# macOS
+.DS_Store

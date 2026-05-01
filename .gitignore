@@ -21,6 +21,7 @@ browser_state/
 
 # State DB
 processed_emails.db
+courses.private.json
 *.db
 *.sqlite
 *.sqlite3

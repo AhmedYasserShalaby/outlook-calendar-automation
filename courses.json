@@ -1,32 +1,6 @@
 {
   "courses": [
     {
-      "code": "INCS617",
-      "name": "Software Engineering",
-      "color": "7",
-      "schedule": [
-        {
-          "day": "Sunday",
-          "start": "10:15",
-          "end": "11:30",
-          "type": "Lab"
-        }
-      ]
-    },
-    {
-      "code": "BUAD524",
-      "name": "Business Law and Technology Governance",
-      "color": "3",
-      "schedule": [
-        {
-          "day": "Sunday",
-          "start": "13:45",
-          "end": "15:15",
-          "type": "Tutorial"
-        }
-      ]
-    },
-    {
       "code": "BINF602",
       "name": "Business Intelligence and Analytics",
       "color": "5",
@@ -40,58 +14,6 @@
       ]
     },
     {
-      "code": "INCS614",
-      "name": "Cybersecurity",
-      "color": "11",
-      "schedule": [
-        {
-          "day": "Monday",
-          "start": "15:45",
-          "end": "17:15",
-          "type": "Lab"
-        }
-      ]
-    },
-    {
-      "code": "BINF601",
-      "name": "IT Project Management",
-      "color": "9",
-      "schedule": [
-        {
-          "day": "Tuesday",
-          "start": "08:30",
-          "end": "10:00",
-          "type": "Tutorial"
-        }
-      ]
-    },
-    {
-      "code": "INCS616",
-      "name": "Business Continuity and Risk Management",
-      "color": "10",
-      "schedule": [
-        {
-          "day": "Wednesday",
-          "start": "08:30",
-          "end": "10:00",
-          "type": "Lab"
-        }
-      ]
-    },
-    {
-      "code": "BUAD705",
-      "name": "Business Simulation",
-      "color": "6",
-      "schedule": [
-        {
-          "day": "Wednesday",
-          "start": "12:00",
-          "end": "13:30",
-          "type": "Tutorial"
-        }
-      ]
-    },
-    {
       "code": "INCS615",
       "name": "Big Data and NoSQL",
       "color": "1",
@@ -100,12 +22,6 @@
           "day": "Thursday",
           "start": "08:30",
           "end": "10:00",
-          "type": "Lab"
-        },
-        {
-          "day": "Thursday",
-          "start": "10:15",
-          "end": "11:45",
           "type": "Lab"
         }
       ]

@@ -17,8 +17,10 @@ load_dotenv(_PROJECT_DIR / ".env")
 
 # ── Google Calendar ──────────────────────────────────────────────────
 GOOGLE_CALENDAR_ID: str = os.getenv("GOOGLE_CALENDAR_ID", "primary")
-GOOGLE_CREDENTIALS_PATH: str = str(_PROJECT_DIR / "client_secret_1068366550113-44p26ttgibecqejfcudmajkr26jh4d5g.apps.googleusercontent.com.json")
-GOOGLE_TOKEN_PATH: str = str(_PROJECT_DIR / "token.json")
+GOOGLE_CREDENTIALS_PATH: str = os.getenv(
+    "GOOGLE_CREDENTIALS_PATH", str(_PROJECT_DIR / "credentials.json")
+)
+GOOGLE_TOKEN_PATH: str = os.getenv("GOOGLE_TOKEN_PATH", str(_PROJECT_DIR / "token.json"))
 
 # ── OpenAI ───────────────────────────────────────────────────────────
 OPENAI_API_KEY: str = os.getenv("OPENAI_API_KEY", "")
@@ -55,11 +57,11 @@ SLOT_TIMES: dict[int, tuple[str, str]] = {
 # ── Course Schedule ─────────────────────────────────────────────────
 def load_courses() -> list[dict]:
     """Load course schedule from courses.json."""
-    courses_path = _PROJECT_DIR / "courses.json"
+    courses_path = Path(os.getenv("COURSES_PATH", str(_PROJECT_DIR / "courses.json")))
     if not courses_path.exists():
         raise FileNotFoundError(
             f"courses.json not found at {courses_path}. "
-            "Copy courses.json.example and fill in your schedule."
+            "Copy courses.json.example to courses.json and fill in your schedule."
         )
     with open(courses_path, "r") as f:
         data = json.load(f)
